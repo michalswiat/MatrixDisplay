@@ -1,1 +1,897 @@
 EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:max
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A3 16535 11693
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MAX7219 U1
+U 1 1 579E5E97
+P 2100 1650
+F 0 "U1" H 2100 950 60  0000 C CNN
+F 1 "MAX7219" H 2100 2350 60  0000 C CNN
+F 2 "" H 2700 1650 60  0000 C CNN
+F 3 "" H 2700 1650 60  0000 C CNN
+	1    2100 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 1100 0    39   UnSpc ~ 0
+DIN
+Text GLabel 1450 1200 0    39   UnSpc ~ 0
+C11
+Text GLabel 1450 1300 0    39   UnSpc ~ 0
+C15
+Text GLabel 1450 1500 0    39   UnSpc ~ 0
+C17
+Text GLabel 1450 1600 0    39   UnSpc ~ 0
+C13
+Text GLabel 1450 1700 0    39   UnSpc ~ 0
+C14
+Text GLabel 1450 1800 0    39   UnSpc ~ 0
+C18
+Text GLabel 1450 2000 0    39   UnSpc ~ 0
+C16
+Text GLabel 1450 2100 0    39   UnSpc ~ 0
+C12
+Text GLabel 2750 1100 2    39   UnSpc ~ 0
+DOUT1
+Text GLabel 2750 1200 2    39   UnSpc ~ 0
+R14
+Text GLabel 2750 1300 2    39   UnSpc ~ 0
+R18
+Text GLabel 2750 1400 2    39   UnSpc ~ 0
+R15
+Text GLabel 2750 1500 2    39   UnSpc ~ 0
+R13
+Text GLabel 2750 1800 2    39   UnSpc ~ 0
+R17
+Text GLabel 2750 1900 2    39   UnSpc ~ 0
+R12
+Text GLabel 2750 2000 2    39   UnSpc ~ 0
+R16
+Text GLabel 2750 2100 2    39   UnSpc ~ 0
+R11
+Text GLabel 2750 2200 2    39   UnSpc ~ 0
+CLK
+Text GLabel 1450 2200 0    39   UnSpc ~ 0
+LOAD
+$Comp
+L GND #PWR1
+U 1 1 579E6D06
+P 1150 2300
+F 0 "#PWR1" H 1150 2050 50  0001 C CNN
+F 1 "GND" H 1150 2150 50  0000 C CNN
+F 2 "" H 1150 2300 50  0000 C CNN
+F 3 "" H 1150 2300 50  0000 C CNN
+	1    1150 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 579E6D27
+P 3050 1550
+F 0 "R1" V 3130 1550 50  0000 C CNN
+F 1 "R" V 3050 1550 50  0000 C CNN
+F 2 "" V 2980 1550 50  0000 C CNN
+F 3 "" H 3050 1550 50  0000 C CNN
+	1    3050 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR4
+U 1 1 579E6DBF
+P 3050 950
+F 0 "#PWR4" H 3050 800 50  0001 C CNN
+F 1 "VCC" H 3050 1100 50  0000 C CNN
+F 2 "" H 3050 950 50  0000 C CNN
+F 3 "" H 3050 950 50  0000 C CNN
+	1    3050 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 1100 1450 1100
+Wire Wire Line
+	1500 1200 1450 1200
+Wire Wire Line
+	1500 1300 1450 1300
+Wire Wire Line
+	1500 1500 1450 1500
+Wire Wire Line
+	1500 1600 1450 1600
+Wire Wire Line
+	1500 1700 1450 1700
+Wire Wire Line
+	1500 1800 1450 1800
+Wire Wire Line
+	1500 2000 1450 2000
+Wire Wire Line
+	1500 2100 1450 2100
+Wire Wire Line
+	1500 2200 1450 2200
+Wire Wire Line
+	2700 2200 2750 2200
+Wire Wire Line
+	2700 2100 2750 2100
+Wire Wire Line
+	2750 2000 2700 2000
+Wire Wire Line
+	2700 1900 2750 1900
+Wire Wire Line
+	2750 1800 2700 1800
+Wire Wire Line
+	2700 1500 2750 1500
+Wire Wire Line
+	2700 1400 2750 1400
+Wire Wire Line
+	2700 1300 2750 1300
+Wire Wire Line
+	2700 1200 2750 1200
+Wire Wire Line
+	2700 1100 2750 1100
+Wire Wire Line
+	2700 1700 3050 1700
+Wire Wire Line
+	2700 1600 2950 1600
+Wire Wire Line
+	2950 1600 2950 1350
+Wire Wire Line
+	2950 1350 3050 1350
+Wire Wire Line
+	3050 950  3050 1400
+Connection ~ 3050 1350
+Wire Wire Line
+	1500 1900 1150 1900
+Wire Wire Line
+	1150 1400 1150 2300
+Wire Wire Line
+	1150 1400 1500 1400
+Connection ~ 1150 1900
+$Comp
+L MAX7219 U4
+U 1 1 579E6F41
+P 4200 1650
+F 0 "U4" H 4200 950 60  0000 C CNN
+F 1 "MAX7219" H 4200 2350 60  0000 C CNN
+F 2 "" H 4800 1650 60  0000 C CNN
+F 3 "" H 4800 1650 60  0000 C CNN
+	1    4200 1650
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 1100 0    39   UnSpc ~ 0
+DOUT1
+Text GLabel 3550 1200 0    39   UnSpc ~ 0
+C21
+Text GLabel 3550 1300 0    39   UnSpc ~ 0
+C25
+Text GLabel 3550 1500 0    39   UnSpc ~ 0
+C27
+Text GLabel 3550 1600 0    39   UnSpc ~ 0
+C23
+Text GLabel 3550 1700 0    39   UnSpc ~ 0
+C24
+Text GLabel 3550 1800 0    39   UnSpc ~ 0
+C28
+Text GLabel 3550 2000 0    39   UnSpc ~ 0
+C26
+Text GLabel 3550 2100 0    39   UnSpc ~ 0
+C22
+Text GLabel 4850 1100 2    39   UnSpc ~ 0
+DOUT2
+Text GLabel 4850 1200 2    39   UnSpc ~ 0
+R24
+Text GLabel 4850 1300 2    39   UnSpc ~ 0
+R28
+Text GLabel 4850 1400 2    39   UnSpc ~ 0
+R25
+Text GLabel 4850 1500 2    39   UnSpc ~ 0
+R23
+Text GLabel 4850 1800 2    39   UnSpc ~ 0
+R27
+Text GLabel 4850 1900 2    39   UnSpc ~ 0
+R22
+Text GLabel 4850 2000 2    39   UnSpc ~ 0
+R26
+Text GLabel 4850 2100 2    39   UnSpc ~ 0
+R21
+Text GLabel 4850 2200 2    39   UnSpc ~ 0
+CLK
+Text GLabel 3550 2200 0    39   UnSpc ~ 0
+LOAD
+$Comp
+L GND #PWR7
+U 1 1 579E6F5B
+P 3250 2300
+F 0 "#PWR7" H 3250 2050 50  0001 C CNN
+F 1 "GND" H 3250 2150 50  0000 C CNN
+F 2 "" H 3250 2300 50  0000 C CNN
+F 3 "" H 3250 2300 50  0000 C CNN
+	1    3250 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R4
+U 1 1 579E6F61
+P 5150 1550
+F 0 "R4" V 5230 1550 50  0000 C CNN
+F 1 "R" V 5150 1550 50  0000 C CNN
+F 2 "" V 5080 1550 50  0000 C CNN
+F 3 "" H 5150 1550 50  0000 C CNN
+	1    5150 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR10
+U 1 1 579E6F67
+P 5150 950
+F 0 "#PWR10" H 5150 800 50  0001 C CNN
+F 1 "VCC" H 5150 1100 50  0000 C CNN
+F 2 "" H 5150 950 50  0000 C CNN
+F 3 "" H 5150 950 50  0000 C CNN
+	1    5150 950 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 1100 3550 1100
+Wire Wire Line
+	3600 1200 3550 1200
+Wire Wire Line
+	3600 1300 3550 1300
+Wire Wire Line
+	3600 1500 3550 1500
+Wire Wire Line
+	3600 1600 3550 1600
+Wire Wire Line
+	3600 1700 3550 1700
+Wire Wire Line
+	3600 1800 3550 1800
+Wire Wire Line
+	3600 2000 3550 2000
+Wire Wire Line
+	3600 2100 3550 2100
+Wire Wire Line
+	3600 2200 3550 2200
+Wire Wire Line
+	4800 2200 4850 2200
+Wire Wire Line
+	4800 2100 4850 2100
+Wire Wire Line
+	4850 2000 4800 2000
+Wire Wire Line
+	4800 1900 4850 1900
+Wire Wire Line
+	4850 1800 4800 1800
+Wire Wire Line
+	4800 1500 4850 1500
+Wire Wire Line
+	4800 1400 4850 1400
+Wire Wire Line
+	4800 1300 4850 1300
+Wire Wire Line
+	4800 1200 4850 1200
+Wire Wire Line
+	4800 1100 4850 1100
+Wire Wire Line
+	4800 1700 5150 1700
+Wire Wire Line
+	4800 1600 5050 1600
+Wire Wire Line
+	5050 1600 5050 1350
+Wire Wire Line
+	5050 1350 5150 1350
+Wire Wire Line
+	5150 950  5150 1400
+Connection ~ 5150 1350
+Wire Wire Line
+	3600 1900 3250 1900
+Wire Wire Line
+	3250 1400 3250 2300
+Wire Wire Line
+	3250 1400 3600 1400
+Connection ~ 3250 1900
+$Comp
+L MAX7219 U2
+U 1 1 579E70AF
+P 2100 3500
+F 0 "U2" H 2100 2800 60  0000 C CNN
+F 1 "MAX7219" H 2100 4200 60  0000 C CNN
+F 2 "" H 2700 3500 60  0000 C CNN
+F 3 "" H 2700 3500 60  0000 C CNN
+	1    2100 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 2950 0    39   UnSpc ~ 0
+DOUT2
+Text GLabel 1450 3050 0    39   UnSpc ~ 0
+C31
+Text GLabel 1450 3150 0    39   UnSpc ~ 0
+C35
+Text GLabel 1450 3350 0    39   UnSpc ~ 0
+C37
+Text GLabel 1450 3450 0    39   UnSpc ~ 0
+C33
+Text GLabel 1450 3550 0    39   UnSpc ~ 0
+C34
+Text GLabel 1450 3650 0    39   UnSpc ~ 0
+C38
+Text GLabel 1450 3850 0    39   UnSpc ~ 0
+C36
+Text GLabel 1450 3950 0    39   UnSpc ~ 0
+C32
+Text GLabel 2750 2950 2    39   UnSpc ~ 0
+DOUT3
+Text GLabel 2750 3050 2    39   UnSpc ~ 0
+R34
+Text GLabel 2750 3150 2    39   UnSpc ~ 0
+R38
+Text GLabel 2750 3250 2    39   UnSpc ~ 0
+R35
+Text GLabel 2750 3350 2    39   UnSpc ~ 0
+R33
+Text GLabel 2750 3650 2    39   UnSpc ~ 0
+R37
+Text GLabel 2750 3750 2    39   UnSpc ~ 0
+R32
+Text GLabel 2750 3850 2    39   UnSpc ~ 0
+R36
+Text GLabel 2750 3950 2    39   UnSpc ~ 0
+R31
+Text GLabel 2750 4050 2    39   UnSpc ~ 0
+CLK
+Text GLabel 1450 4050 0    39   UnSpc ~ 0
+LOAD
+$Comp
+L GND #PWR2
+U 1 1 579E70C9
+P 1150 4150
+F 0 "#PWR2" H 1150 3900 50  0001 C CNN
+F 1 "GND" H 1150 4000 50  0000 C CNN
+F 2 "" H 1150 4150 50  0000 C CNN
+F 3 "" H 1150 4150 50  0000 C CNN
+	1    1150 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 579E70CF
+P 3050 3400
+F 0 "R2" V 3130 3400 50  0000 C CNN
+F 1 "R" V 3050 3400 50  0000 C CNN
+F 2 "" V 2980 3400 50  0000 C CNN
+F 3 "" H 3050 3400 50  0000 C CNN
+	1    3050 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR5
+U 1 1 579E70D5
+P 3050 2800
+F 0 "#PWR5" H 3050 2650 50  0001 C CNN
+F 1 "VCC" H 3050 2950 50  0000 C CNN
+F 2 "" H 3050 2800 50  0000 C CNN
+F 3 "" H 3050 2800 50  0000 C CNN
+	1    3050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 2950 1450 2950
+Wire Wire Line
+	1500 3050 1450 3050
+Wire Wire Line
+	1500 3150 1450 3150
+Wire Wire Line
+	1500 3350 1450 3350
+Wire Wire Line
+	1500 3450 1450 3450
+Wire Wire Line
+	1500 3550 1450 3550
+Wire Wire Line
+	1500 3650 1450 3650
+Wire Wire Line
+	1500 3850 1450 3850
+Wire Wire Line
+	1500 3950 1450 3950
+Wire Wire Line
+	1500 4050 1450 4050
+Wire Wire Line
+	2700 4050 2750 4050
+Wire Wire Line
+	2700 3950 2750 3950
+Wire Wire Line
+	2750 3850 2700 3850
+Wire Wire Line
+	2700 3750 2750 3750
+Wire Wire Line
+	2750 3650 2700 3650
+Wire Wire Line
+	2700 3350 2750 3350
+Wire Wire Line
+	2700 3250 2750 3250
+Wire Wire Line
+	2700 3150 2750 3150
+Wire Wire Line
+	2700 3050 2750 3050
+Wire Wire Line
+	2700 2950 2750 2950
+Wire Wire Line
+	2700 3550 3050 3550
+Wire Wire Line
+	2700 3450 2950 3450
+Wire Wire Line
+	2950 3450 2950 3200
+Wire Wire Line
+	2950 3200 3050 3200
+Wire Wire Line
+	3050 2800 3050 3250
+Connection ~ 3050 3200
+Wire Wire Line
+	1500 3750 1150 3750
+Wire Wire Line
+	1150 3250 1150 4150
+Wire Wire Line
+	1150 3250 1500 3250
+Connection ~ 1150 3750
+$Comp
+L MAX7219 U5
+U 1 1 579E70F9
+P 4200 3500
+F 0 "U5" H 4200 2800 60  0000 C CNN
+F 1 "MAX7219" H 4200 4200 60  0000 C CNN
+F 2 "" H 4800 3500 60  0000 C CNN
+F 3 "" H 4800 3500 60  0000 C CNN
+	1    4200 3500
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 2950 0    39   UnSpc ~ 0
+DOUT3
+Text GLabel 3550 3050 0    39   UnSpc ~ 0
+C41
+Text GLabel 3550 3150 0    39   UnSpc ~ 0
+C45
+Text GLabel 3550 3350 0    39   UnSpc ~ 0
+C47
+Text GLabel 3550 3450 0    39   UnSpc ~ 0
+C43
+Text GLabel 3550 3550 0    39   UnSpc ~ 0
+C44
+Text GLabel 3550 3650 0    39   UnSpc ~ 0
+C48
+Text GLabel 3550 3850 0    39   UnSpc ~ 0
+C46
+Text GLabel 3550 3950 0    39   UnSpc ~ 0
+C42
+Text GLabel 4850 2950 2    39   UnSpc ~ 0
+DOUT4
+Text GLabel 4850 3050 2    39   UnSpc ~ 0
+R44
+Text GLabel 4850 3150 2    39   UnSpc ~ 0
+R48
+Text GLabel 4850 3250 2    39   UnSpc ~ 0
+R45
+Text GLabel 4850 3350 2    39   UnSpc ~ 0
+R43
+Text GLabel 4850 3650 2    39   UnSpc ~ 0
+R47
+Text GLabel 4850 3750 2    39   UnSpc ~ 0
+R42
+Text GLabel 4850 3850 2    39   UnSpc ~ 0
+R46
+Text GLabel 4850 3950 2    39   UnSpc ~ 0
+R41
+Text GLabel 4850 4050 2    39   UnSpc ~ 0
+CLK
+Text GLabel 3550 4050 0    39   UnSpc ~ 0
+LOAD
+$Comp
+L GND #PWR8
+U 1 1 579E7113
+P 3250 4150
+F 0 "#PWR8" H 3250 3900 50  0001 C CNN
+F 1 "GND" H 3250 4000 50  0000 C CNN
+F 2 "" H 3250 4150 50  0000 C CNN
+F 3 "" H 3250 4150 50  0000 C CNN
+	1    3250 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R5
+U 1 1 579E7119
+P 5150 3400
+F 0 "R5" V 5230 3400 50  0000 C CNN
+F 1 "R" V 5150 3400 50  0000 C CNN
+F 2 "" V 5080 3400 50  0000 C CNN
+F 3 "" H 5150 3400 50  0000 C CNN
+	1    5150 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR11
+U 1 1 579E711F
+P 5150 2800
+F 0 "#PWR11" H 5150 2650 50  0001 C CNN
+F 1 "VCC" H 5150 2950 50  0000 C CNN
+F 2 "" H 5150 2800 50  0000 C CNN
+F 3 "" H 5150 2800 50  0000 C CNN
+	1    5150 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 2950 3550 2950
+Wire Wire Line
+	3600 3050 3550 3050
+Wire Wire Line
+	3600 3150 3550 3150
+Wire Wire Line
+	3600 3350 3550 3350
+Wire Wire Line
+	3600 3450 3550 3450
+Wire Wire Line
+	3600 3550 3550 3550
+Wire Wire Line
+	3600 3650 3550 3650
+Wire Wire Line
+	3600 3850 3550 3850
+Wire Wire Line
+	3600 3950 3550 3950
+Wire Wire Line
+	3600 4050 3550 4050
+Wire Wire Line
+	4800 4050 4850 4050
+Wire Wire Line
+	4800 3950 4850 3950
+Wire Wire Line
+	4850 3850 4800 3850
+Wire Wire Line
+	4800 3750 4850 3750
+Wire Wire Line
+	4850 3650 4800 3650
+Wire Wire Line
+	4800 3350 4850 3350
+Wire Wire Line
+	4800 3250 4850 3250
+Wire Wire Line
+	4800 3150 4850 3150
+Wire Wire Line
+	4800 3050 4850 3050
+Wire Wire Line
+	4800 2950 4850 2950
+Wire Wire Line
+	4800 3550 5150 3550
+Wire Wire Line
+	4800 3450 5050 3450
+Wire Wire Line
+	5050 3450 5050 3200
+Wire Wire Line
+	5050 3200 5150 3200
+Wire Wire Line
+	5150 2800 5150 3250
+Connection ~ 5150 3200
+Wire Wire Line
+	3600 3750 3250 3750
+Wire Wire Line
+	3250 3250 3250 4150
+Wire Wire Line
+	3250 3250 3600 3250
+Connection ~ 3250 3750
+$Comp
+L MAX7219 U3
+U 1 1 579E71EB
+P 2100 5250
+F 0 "U3" H 2100 4550 60  0000 C CNN
+F 1 "MAX7219" H 2100 5950 60  0000 C CNN
+F 2 "" H 2700 5250 60  0000 C CNN
+F 3 "" H 2700 5250 60  0000 C CNN
+	1    2100 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 1450 4700 0    39   UnSpc ~ 0
+DOUT4
+Text GLabel 1450 4800 0    39   UnSpc ~ 0
+C51
+Text GLabel 1450 4900 0    39   UnSpc ~ 0
+C55
+Text GLabel 1450 5100 0    39   UnSpc ~ 0
+C57
+Text GLabel 1450 5200 0    39   UnSpc ~ 0
+C53
+Text GLabel 1450 5300 0    39   UnSpc ~ 0
+C54
+Text GLabel 1450 5400 0    39   UnSpc ~ 0
+C58
+Text GLabel 1450 5600 0    39   UnSpc ~ 0
+C56
+Text GLabel 1450 5700 0    39   UnSpc ~ 0
+C52
+Text GLabel 2750 4700 2    39   UnSpc ~ 0
+DOUT5
+Text GLabel 2750 4800 2    39   UnSpc ~ 0
+R54
+Text GLabel 2750 4900 2    39   UnSpc ~ 0
+R58
+Text GLabel 2750 5000 2    39   UnSpc ~ 0
+R55
+Text GLabel 2750 5100 2    39   UnSpc ~ 0
+R53
+Text GLabel 2750 5400 2    39   UnSpc ~ 0
+R57
+Text GLabel 2750 5500 2    39   UnSpc ~ 0
+R52
+Text GLabel 2750 5600 2    39   UnSpc ~ 0
+R56
+Text GLabel 2750 5700 2    39   UnSpc ~ 0
+R51
+Text GLabel 2750 5800 2    39   UnSpc ~ 0
+CLK
+Text GLabel 1450 5800 0    39   UnSpc ~ 0
+LOAD
+$Comp
+L GND #PWR3
+U 1 1 579E7205
+P 1150 5900
+F 0 "#PWR3" H 1150 5650 50  0001 C CNN
+F 1 "GND" H 1150 5750 50  0000 C CNN
+F 2 "" H 1150 5900 50  0000 C CNN
+F 3 "" H 1150 5900 50  0000 C CNN
+	1    1150 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R3
+U 1 1 579E720B
+P 3050 5150
+F 0 "R3" V 3130 5150 50  0000 C CNN
+F 1 "R" V 3050 5150 50  0000 C CNN
+F 2 "" V 2980 5150 50  0000 C CNN
+F 3 "" H 3050 5150 50  0000 C CNN
+	1    3050 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR6
+U 1 1 579E7211
+P 3050 4550
+F 0 "#PWR6" H 3050 4400 50  0001 C CNN
+F 1 "VCC" H 3050 4700 50  0000 C CNN
+F 2 "" H 3050 4550 50  0000 C CNN
+F 3 "" H 3050 4550 50  0000 C CNN
+	1    3050 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1500 4700 1450 4700
+Wire Wire Line
+	1500 4800 1450 4800
+Wire Wire Line
+	1500 4900 1450 4900
+Wire Wire Line
+	1500 5100 1450 5100
+Wire Wire Line
+	1500 5200 1450 5200
+Wire Wire Line
+	1500 5300 1450 5300
+Wire Wire Line
+	1500 5400 1450 5400
+Wire Wire Line
+	1500 5600 1450 5600
+Wire Wire Line
+	1500 5700 1450 5700
+Wire Wire Line
+	1500 5800 1450 5800
+Wire Wire Line
+	2700 5800 2750 5800
+Wire Wire Line
+	2700 5700 2750 5700
+Wire Wire Line
+	2750 5600 2700 5600
+Wire Wire Line
+	2700 5500 2750 5500
+Wire Wire Line
+	2750 5400 2700 5400
+Wire Wire Line
+	2700 5100 2750 5100
+Wire Wire Line
+	2700 5000 2750 5000
+Wire Wire Line
+	2700 4900 2750 4900
+Wire Wire Line
+	2700 4800 2750 4800
+Wire Wire Line
+	2700 4700 2750 4700
+Wire Wire Line
+	2700 5300 3050 5300
+Wire Wire Line
+	2700 5200 2950 5200
+Wire Wire Line
+	2950 5200 2950 4950
+Wire Wire Line
+	2950 4950 3050 4950
+Wire Wire Line
+	3050 4550 3050 5000
+Connection ~ 3050 4950
+Wire Wire Line
+	1500 5500 1150 5500
+Wire Wire Line
+	1150 5000 1150 5900
+Wire Wire Line
+	1150 5000 1500 5000
+Connection ~ 1150 5500
+$Comp
+L MAX7219 U6
+U 1 1 579E7235
+P 4200 5250
+F 0 "U6" H 4200 4550 60  0000 C CNN
+F 1 "MAX7219" H 4200 5950 60  0000 C CNN
+F 2 "" H 4800 5250 60  0000 C CNN
+F 3 "" H 4800 5250 60  0000 C CNN
+	1    4200 5250
+	1    0    0    -1  
+$EndComp
+Text GLabel 3550 4700 0    39   UnSpc ~ 0
+DOUT5
+Text GLabel 3550 4800 0    39   UnSpc ~ 0
+C61
+Text GLabel 3550 4900 0    39   UnSpc ~ 0
+C65
+Text GLabel 3550 5100 0    39   UnSpc ~ 0
+C67
+Text GLabel 3550 5200 0    39   UnSpc ~ 0
+C63
+Text GLabel 3550 5300 0    39   UnSpc ~ 0
+C64
+Text GLabel 3550 5400 0    39   UnSpc ~ 0
+C68
+Text GLabel 3550 5600 0    39   UnSpc ~ 0
+C66
+Text GLabel 3550 5700 0    39   UnSpc ~ 0
+C62
+Text GLabel 4850 4800 2    39   UnSpc ~ 0
+R64
+Text GLabel 4850 4900 2    39   UnSpc ~ 0
+R68
+Text GLabel 4850 5000 2    39   UnSpc ~ 0
+R65
+Text GLabel 4850 5100 2    39   UnSpc ~ 0
+R63
+Text GLabel 4850 5400 2    39   UnSpc ~ 0
+R67
+Text GLabel 4850 5500 2    39   UnSpc ~ 0
+R62
+Text GLabel 4850 5600 2    39   UnSpc ~ 0
+R66
+Text GLabel 4850 5700 2    39   UnSpc ~ 0
+R61
+Text GLabel 4850 5800 2    39   UnSpc ~ 0
+CLK
+Text GLabel 3550 5800 0    39   UnSpc ~ 0
+LOAD
+$Comp
+L GND #PWR9
+U 1 1 579E724F
+P 3250 5900
+F 0 "#PWR9" H 3250 5650 50  0001 C CNN
+F 1 "GND" H 3250 5750 50  0000 C CNN
+F 2 "" H 3250 5900 50  0000 C CNN
+F 3 "" H 3250 5900 50  0000 C CNN
+	1    3250 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R6
+U 1 1 579E7255
+P 5150 5150
+F 0 "R6" V 5230 5150 50  0000 C CNN
+F 1 "R" V 5150 5150 50  0000 C CNN
+F 2 "" V 5080 5150 50  0000 C CNN
+F 3 "" H 5150 5150 50  0000 C CNN
+	1    5150 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L VCC #PWR12
+U 1 1 579E725B
+P 5150 4550
+F 0 "#PWR12" H 5150 4400 50  0001 C CNN
+F 1 "VCC" H 5150 4700 50  0000 C CNN
+F 2 "" H 5150 4550 50  0000 C CNN
+F 3 "" H 5150 4550 50  0000 C CNN
+	1    5150 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 4700 3550 4700
+Wire Wire Line
+	3600 4800 3550 4800
+Wire Wire Line
+	3600 4900 3550 4900
+Wire Wire Line
+	3600 5100 3550 5100
+Wire Wire Line
+	3600 5200 3550 5200
+Wire Wire Line
+	3600 5300 3550 5300
+Wire Wire Line
+	3600 5400 3550 5400
+Wire Wire Line
+	3600 5600 3550 5600
+Wire Wire Line
+	3600 5700 3550 5700
+Wire Wire Line
+	3600 5800 3550 5800
+Wire Wire Line
+	4800 5800 4850 5800
+Wire Wire Line
+	4800 5700 4850 5700
+Wire Wire Line
+	4850 5600 4800 5600
+Wire Wire Line
+	4800 5500 4850 5500
+Wire Wire Line
+	4850 5400 4800 5400
+Wire Wire Line
+	4800 5100 4850 5100
+Wire Wire Line
+	4800 5000 4850 5000
+Wire Wire Line
+	4800 4900 4850 4900
+Wire Wire Line
+	4800 4800 4850 4800
+Wire Wire Line
+	4800 4700 4850 4700
+Wire Wire Line
+	4800 5300 5150 5300
+Wire Wire Line
+	4800 5200 5050 5200
+Wire Wire Line
+	5050 5200 5050 4950
+Wire Wire Line
+	5050 4950 5150 4950
+Wire Wire Line
+	5150 4550 5150 5000
+Connection ~ 5150 4950
+Wire Wire Line
+	3600 5500 3250 5500
+Wire Wire Line
+	3250 5000 3250 5900
+Wire Wire Line
+	3250 5000 3600 5000
+Connection ~ 3250 5500
+NoConn ~ 4850 4700
+$EndSCHEMATC
